@@ -1,5 +1,30 @@
 # MS17-010
 
+Eternal Blue exploits and scripts
+
+https://github.com/worawit/MS17-010/
+
+This link is composed of the most in-depth comprehensive research on MS17-010 CVE-2017-0144 is the CVE ID in MS17-010 that is related to EternalBlue.
+
+https://research.checkpoint.com/eternalblue-everything-know/#bugb
+
+Some excerpts:
+
+"EternalBlue works on all Windows versions prior to Windows 8. These versions contain an interprocess communication share (IPC$) that allows a null session. This means that the connection is established via anonymous login and null session is allowed by default. Null session allows the client to send different commands to the server."
+
+"EternalBlue exploits 3 bugs (named as Bug [A,B,C]) to achive RCE, Bug A (i.e. “Wrong Casting Bug”) Bug B (i.e. “Wrong Parsing Function Bug”) Bug C (i.e. “Non-paged Pool Allocation Bug”) "
+
+A. "Wrong Casting Bung" "A bug in the process of converting FEA (File Extended Attributes) from Os2 structure to NT structure by the Windows SMB implementation (srv.sys driver) leads to buffer overflow in the non-paged kernel pool."
+
+B. “Wrong Parsing Function Bug” SMB_COM_TRANSACTION2:Sub-commands providing a set of server-side file system semantics. SMB_COM_NT_TRANSACT:Sub-commands extend the file system feature access offered by SMB_COM_TRANSACTION2 and also allow for the transfer of very large parameter and data blocks.
+
+C. “Non-paged Pool Allocation Bug” In a nutshell: There is a bug that lets you allocate a chunk with a specified size in the kernel non-paged pool with the specified size. It is used in the heap grooming phase when creating a hole that later will be filled with a data size that causes an out of bound write to the next chunk (Bug A & Bug B).
+
+See 
+https://research.checkpoint.com/eternalblue-everything-know/#bugb 
+for the complete story, featuring very detailed in-depth technical explanation and illustrations.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
 This repository is for public my work on MS17-010. I have no plan to do any support. **All support issues will not get response from me**.
 
 ## Files
