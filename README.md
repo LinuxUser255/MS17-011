@@ -6,6 +6,8 @@ The link below is composed of the most in-depth comprehensive research on MS17-0
 
 https://research.checkpoint.com/eternalblue-everything-know/#bugb
 
+https://blogs.360.cn/post/nsa-eternalblue-smb.html
+
 Some excerpts:
 
 "EternalBlue works on all Windows versions prior to Windows 8. These versions contain an interprocess communication share (IPC$) that allows a null session. This means that the connection is established via anonymous login and null session is allowed by default. Null session allows the client to send different commands to the server."
