@@ -2,9 +2,7 @@
 
 Eternal Blue exploits and scripts
 
-https://github.com/worawit/MS17-010/
-
-This link is composed of the most in-depth comprehensive research on MS17-010 CVE-2017-0144 is the CVE ID in MS17-010 that is related to EternalBlue.
+The link below is composed of the most in-depth comprehensive research on MS17-010 CVE-2017-0144 that is currently available.
 
 https://research.checkpoint.com/eternalblue-everything-know/#bugb
 
